@@ -19,6 +19,8 @@
     var constants = document.getElementById('constants');
 
     button.textContent = "Invest";
+    button.style.margin = "0 auto";
+    button.style.display = "block";
 
     button.addEventListener('click', function(event) {
         if(invested == true) return;
@@ -42,6 +44,10 @@
 
 {% block content %}
     <style>
+        button{
+            margin:0 auto;
+            display:block;
+        }
     </style>
     <redwood-channel channel="invest"></redwood-channel>
     <otree-constants id="constants"></otree-constants>
